@@ -94,27 +94,25 @@
 	text-align: center;
 	}
 	</style>
-<SCRIPT LANGUAGE="JavaScript">
+<script language="JavaScript">
 
-<!-- This script and many more are available free online at -->
-<!-- The JavaScript Source!! http://javascript.internet.com -->
 
-<!-- Begin
+function initImages(){
+hideMenu('viewefg');
+hideMenu('configefg');
+hideMenu('downloadefg');
+}
+function showMenu(currentMenuID){
+    document.getElementById(currentMenuID).style.visibility = 'visible';
+}
+function hideMenu(currentMenuID){
+    document.getElementById(currentMenuID).style.visibility = 'hidden';
 
-image1 = new Image();
-image1.src = "viewicon_mouseover.jpg";
-
-image2 = new Image();
-image2.src = "config_mouseover.jpg";
-
-image3 = new Image();
-image3.src = "downloadicon_mouseover.jpg";
-
-// End -->
-</SCRIPT>
+}
+</script>
 </head>
 
-<body>
+<body onload="initImages();">
 <table class="frame">
 <tr>
 <td>
@@ -126,21 +124,21 @@ image3.src = "downloadicon_mouseover.jpg";
 </tr>
 <tr>
        <td class="icon">
-	   		<a href="" onmouseover="image1.src='viewicon_mouseover.jpg';" onmouseout="image1.src='viewicon.jpg';">
+	   		<a href="http://panda.cs.umb.edu/efg2/TypePage.jsp" onmouseover="image1.src='viewicon_mouseover.jpg'; showMenu('viewefg');" onmouseout="image1.src='viewicon.jpg'; hideMenu('viewefg')">
 		<img name="image1" src="viewicon.jpg" width="122" height="106" border=0 alt="View Sample EFGs"></a>
-	   <div id="viewefg">View Sample EFGs</div>
+	   <div id="viewefg" onmouseover="showMenu('viewefg');" onmouseout="hideMenu('viewefg')"><a href="http://panda.cs.umb.edu/efg2/TypePage.jsp" >View Sample EFGs</a></div>
 	   </td>
 	   <td class="horizspacer"></td>
 	   <td class="icon">
-	   		<a href="" onmouseover="image2.src='configicon_mouseover.jpg';" onmouseout="image2.src='configicon.jpg';">
+	   		<a href="" onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');">
 		<img name="image2" src="configicon.jpg" width="122" height="106" border=0 alt="Configure Your EFG"></a>
-	   <div id="configefg">Configure Your EFG</div>
+	   <div id="configefg" onmouseover="showMenu('configefg');" onmouseout="hideMenu('configefg');"><a href="" >Configure Your EFG</a></div>
 	   </td>
 	   <td class="horizspacer"></td>
        <td class="icon">
-	   		<a href="" onmouseover="image3.src='downloadicon_mouseover.jpg';" onmouseout="image3.src='downloadicon.jpg';">
+	   		<a href="" onmouseover="image3.src='downloadicon_mouseover.jpg'; showMenu('downloadefg');" onmouseout="image3.src='downloadicon.jpg'; hideMenu('downloadefg');">
 	   <img name="image3" src="downloadicon.jpg" width="122" height="106" border="0" alt="Download the EFG Software"></a>
-	   <div id="downloadefg">Download the EFG Software<br>(Coming Soon!)</div>
+	   <div id="downloadefg" onmouseover="showMenu('downloadefg');" onmouseout="hideMenu('downloadefg');"><a href="" >Download the EFG Software<br>(Coming Soon!)</a></div>
 	   </td>
 </tr>
 <tr>
