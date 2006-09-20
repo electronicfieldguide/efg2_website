@@ -8,7 +8,7 @@
 	background-color: #FFFFFF;
 	}
 	table.frame {
-	background-color: #CCFF99;
+	background-color: #B7E4C3;
 	border: 3px ridge #B7E4C3;
 	margin-left: auto;
 	margin-right: auto;
@@ -16,8 +16,8 @@
 	}
 	table.main {
 	width: 547px;
-	background-color: #efffd5;
-	border: 5px solid #efffd5;
+	background-color: #B7E4C3;
+	border: 5px solid #B7E4C3;
 	margin-left: auto;
 	margin-right: auto;
 	align: center;
@@ -27,7 +27,6 @@
 	}
 	td.title {
 	padding-bottom: 75px;
-	padding-top: 10px;
 	}
 	td.icon {
 	width: 29%;
@@ -94,74 +93,59 @@
 	width: 80%;
 	text-align: center;
 	}
-	a.blinkmouseover {
-	font-family: sans, arial, verdana;
-	font-size: 12px;
-	font-weight: bold;
-	color: #15660e;
-	text-decoration: none;
-	}
-	a.blinkmouseoff {
-	font-family: sans, arial, verdana;
-	font-size: 12px;
-	font-weight: normal;
-	color: #15660e;
-	text-decoration: none;
-	}
 	</style>
-<script language="JavaScript">
+<SCRIPT LANGUAGE="JavaScript">
 
-function initImages(){
-hideMenu('viewefg');
-hideMenu('configefg');
-hideMenu('downloadefg');
-}
-function showMenu(currentMenuID){
-    document.getElementById(currentMenuID).style.visibility = 'visible';
-}
-function hideMenu(currentMenuID){
-    document.getElementById(currentMenuID).style.visibility = 'hidden';
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
 
-}
-</script>
+<!-- Begin
+
+image1 = new Image();
+image1.src = "viewicon_mouseover.jpg";
+
+image2 = new Image();
+image2.src = "config_mouseover.jpg";
+
+image3 = new Image();
+image3.src = "downloadicon_mouseover.jpg";
+
+// End -->
+</SCRIPT>
 </head>
 
-<body onload="initImages();">
+<body>
 <table class="frame">
 <tr>
 <td>
-
 <table class="main">
 <tr>
        <td COLSPAN="5" class="title">
-	   <img src="efgpagelogo.jpg" width="559" height="59" border="0" alt="The Electronic Field Guide Project" align="middle">
+	   <img src="efgpagelogo.jpg" width="547" height="50" border="0" alt="The Electronic Field Guide Project" align="middle">
 	   </td>
 </tr>
 <tr>
        <td class="icon">
-	   		<a href="http://panda.cs.umb.edu/efg2/TypePage.jsp" onmouseover="image1.src='viewicon_mouseover.jpg'; showMenu('viewefg');" onmouseout="image1.src='viewicon.jpg'; hideMenu('viewefg')">
-		<img name="image1" src="viewicon.jpg" width="118" height="101" border=0 alt="View Sample EFGs"></a>
-	   <div id="viewefg" onmouseover="image1.src='viewicon_mouseover.jpg'; showMenu('viewefg');" onmouseout="image1.src='viewicon.jpg'; hideMenu('viewefg')"><a class="blinkmouseoff" href="http://panda.cs.umb.edu/efg2/TypePage.jsp" >View Sample EFGs</a></div>
-
+	   		<a href="" onmouseover="image1.src='viewicon_mouseover.jpg';" onmouseout="image1.src='viewicon.jpg';">
+		<img name="image1" src="viewicon.jpg" width="122" height="106" border=0 alt="View Sample EFGs"></a>
+	   <div id="viewefg">View Sample EFGs</div>
 	   </td>
 	   <td class="horizspacer"></td>
 	   <td class="icon">
-	   		<a href="" onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');">
-		<img name="image2" src="configicon.jpg" width="118" height="101" border=0 alt="Configure Your EFG"></a>
-	   <div id="configefg"  onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');"><a class="blinkmouseoff" href="">Configure Your EFG</a></div>
+	   		<a href="" onmouseover="image2.src='configicon_mouseover.jpg';" onmouseout="image2.src='configicon.jpg';">
+		<img name="image2" src="configicon.jpg" width="122" height="106" border=0 alt="Configure Your EFG"></a>
+	   <div id="configefg">Configure Your EFG</div>
 	   </td>
 	   <td class="horizspacer"></td>
-
        <td class="icon">
-	   		<a href="" onmouseover="image3.src='downloadicon_mouseover.jpg'; showMenu('downloadefg');" onmouseout="image3.src='downloadicon.jpg'; hideMenu('downloadefg');">
-	   <img name="image3" src="downloadicon.jpg" width="118" height="101" border="0" alt="Download the EFG Software"></a>
-	   <div id="downloadefg" onmouseover="image3.src='downloadicon_mouseover.jpg'; showMenu('downloadefg');" onmouseout="image3.src='downloadicon.jpg'; hideMenu('downloadefg');"><a class="blinkmouseoff" href="" >Download the EFG Software</a></div>
+	   		<a href="" onmouseover="image3.src='downloadicon_mouseover.jpg';" onmouseout="image3.src='downloadicon.jpg';">
+	   <img name="image3" src="downloadicon.jpg" width="122" height="106" border="0" alt="Download the EFG Software"></a>
+	   <div id="downloadefg">Download the EFG Software<br>(Coming Soon!)</div>
 	   </td>
 </tr>
 <tr>
 		<td class="vertspacer">
 		</td>
-
 	   <td class="horizspacer"></td>
 		<td class="vertspacer">
 		</td>
@@ -172,7 +156,6 @@ function hideMenu(currentMenuID){
 <tr>
 		<td class="">
 		</td>
-
 	   <td class="horizspacer"></td>
 		<td class="">
 		</td>
@@ -183,7 +166,6 @@ function hideMenu(currentMenuID){
 </tr>
 <tr>
        <td class="credits" COLSPAN="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.</td>
-
 </tr>
 <tr>
 	   <td class="timestamp" COLSPAN="5"><script language="JavaScript" type="text/javascript">
