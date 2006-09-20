@@ -95,35 +95,38 @@
 	text-align: center;
 	}
 	a.blinkmouseover {
-	font-family: sans, arial, verdana;
+	font-family: arial, verdana, helvetica, sans;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	background-color: #B7E4C3;
+	text-decoration: none;
+	padding: 2px;
+	}
+	a.blinkmouseoff {
+	font-family: arial, verdana, helvetica, sans;
 	font-size: 12px;
 	font-weight: bold;
 	color: #15660e;
 	text-decoration: none;
 	}
-	a.blinkmouseoff {
-	font-family: sans, arial, verdana;
-	font-size: 12px;
-	font-weight: normal;
-	color: #15660e;
-	text-decoration: none;
-	}
 	</style>
+
 <script language="JavaScript">
 
 function initImages(){
-hideMenu('viewefg');
-hideMenu('configefg');
-hideMenu('downloadefg');
-}
-function showMenu(currentMenuID){
-    document.getElementById(currentMenuID).style.visibility = 'visible';
-}
-function hideMenu(currentMenuID){
-    document.getElementById(currentMenuID).style.visibility = 'hidden';
 
 }
+function showMenu(currentMenuID){
+   var a = document.getElementById(currentMenuID).childNodes[0];
+  a.className = 'blinkmouseover';
+}
+function hideMenu(currentMenuID){
+   var a = document.getElementById(currentMenuID).childNodes[0];
+   a.className = 'blinkmouseoff';
+}
 </script>
+
 </head>
 
 <body onload="initImages();">
@@ -146,9 +149,9 @@ function hideMenu(currentMenuID){
 	   </td>
 	   <td class="horizspacer"></td>
 	   <td class="icon">
-	   		<a href="" onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');">
+	   		<a href="Links.html" onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');">
 		<img name="image2" src="configicon.jpg" width="118" height="101" border=0 alt="Configure Your EFG"></a>
-	   <div id="configefg"  onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');"><a class="blinkmouseoff" href="">Configure Your EFG</a></div>
+	   <div id="configefg"  onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');"><a class="blinkmouseoff" href="Links.html">Configure Your EFG</a></div>
 	   </td>
 	   <td class="horizspacer"></td>
 
@@ -182,7 +185,7 @@ function hideMenu(currentMenuID){
 		</td>
 </tr>
 <tr>
-       <td class="credits" COLSPAN="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.</td>
+       <td class="credits" COLSPAN="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.<p> Icon credits: View from J.F. Orth, Config by Myownbiggestfan, Download by Auntie_P.</p></td>
 
 </tr>
 <tr>

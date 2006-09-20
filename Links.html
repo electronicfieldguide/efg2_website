@@ -12,13 +12,20 @@
 	border: 0px ridge #B7E4C3;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 	align: center;
+	}
+	table.iconbar {
+	vertical-align: bottom;
 	}
 	table.frame {
 	background-color: #CCFF99;
 	border: 3px ridge #B7E4C3;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 0px;
+	padding-top: 0px;
 	align: center;
 	}
 	table.main {
@@ -49,8 +56,25 @@
 	text-align : left;
 	padding-bottom: 20px;
 	}
+	td.minilogo {
+	vertical-align: bottom;
+	padding-left: 0px;
+	padding-right: 10px;
+	}
 	td.iconbar {
 	align: right;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	}
+	td.icontext {
+	text-align: center;
+	font-family: sans, arial, verdana;
+	font-size: 9px;
+	font-weight: normal;
+	margin-top: 0px;
+	padding-top: 0px;
 	}
 	td.credits {
 	font-family: sans, arial, verdana;
@@ -128,26 +152,25 @@
 <body>
 <table class="header">
 <tr>
+	<td class="minilogo">
+    <img src="efgpagelogomini.jpg" width="410" height="38" border="0" alt="The Electronic Field Guide Project" align="left">
+	</td>
 	<td>
-    <img src="efgpagelogomini.jpg" width="300" border="0" alt="The Electronic Field Guide Project" align="left">
+		<table class="iconbar">
+			<tr>
+				<td class="iconbar"><a href=""><img src="viewiconmini.jpg" width="41" border="0" alt="View Sample EFGs" title="View Sample EFGs"></a></td>
+				<td class="iconbar"><a href="Links.html"><img src="configiconmini.jpg" width="41" border="0" alt="Configure Your EFG" title="Configure Your EFG - Login Required"></a></td>
+				<td class="iconbar"><a href=""><img src="downloadiconmini.jpg" width="41" border="0" alt="Download the EFG Software" title="Download the EFG Software"></a></td>
+			</tr>
+			<tr>
+				<td class="icontext">View</td>
+				<td class="icontext">Config</td>
+				<td class="icontext">Download</td>
+			</tr>
+		</table>
 	</td>
-	<td class="horizspacer">
-	</td>
-	<td class="horizspacer">
-	</td>
-	<td class="horizspacer">
-	</td>
-	<td class="iconbar">
-	<img src="viewicon.jpg" width="40" border="0" alt="View Sample EFGs" title="View Sample EFGs">
-	</td>
-	<td class="iconbar">
-	<img src="configicon.jpg" width="40" border="0" alt="Configure Your EFG" title="Configure Your EFG">
-	</td>
-	<td class="iconbar">
-	<img src="downloadicon.jpg" width="40" border="0" alt="Download the EFG Software" title="Download the EFG Software">
-	</td>
-</tr>
 </table>
+
 <table class="frame">
 <tr>
 <td>
