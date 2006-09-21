@@ -1,9 +1,7 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-
 <html>
-<head>
-	<title>The EFG Project - Electronic Field Guides</title>
-<style>
+	<head>
+		<title>The EFG Project - Electronic Field Guides</title>
+		<style>
 	body {
 	background-color: #FFFFFF;
 	}
@@ -111,95 +109,102 @@
 	text-decoration: none;
 	}
 	</style>
+	<script language="JavaScript">
+		function initImages(){
+		
+		}
+		function showMenu(currentMenuID){
+		   var a = document.getElementById(currentMenuID).childNodes[0];
+		  a.className = 'blinkmouseover';
+		}
+		function hideMenu(currentMenuID){
+		   var a = document.getElementById(currentMenuID).childNodes[0];
+		   a.className = 'blinkmouseoff';
+		}
+		function efgMouseOver(currentImageID){
+		
+		}
+		function efgMouseOut(currentImageID){
+		
+		}
+	</script>
+	</head>
+	<body onload="initImages();">
+		<table class="frame">
+			<tr>
+				<td>
+					<table class="main">
+						<tr>
+							<td COLSPAN="5" class="title">
+								<img src="efgpagelogo.jpg" width="559" height="59" border="0" alt="The Electronic Field Guide Project" align="middle" />
+							</td>
+						</tr>
+						<tr>
+							<td class="icon">
+								<a href="TypePage.jsp" onmouseover="image1.src='viewicon_mouseover.jpg'; showMenu('viewefg');" onmouseout="image1.src='viewicon.jpg'; hideMenu('viewefg')">
+									<img name="image1" src="viewicon.jpg" width="118" height="101" border="0" alt="View Sample EFGs" />
+								</a>
+								<div id="viewefg" onmouseover="image1.src='viewicon_mouseover.jpg'; showMenu('viewefg');" onmouseout="image1.src='viewicon.jpg'; hideMenu('viewefg')">
+									<a class="blinkmouseoff" href="TypePage.jsp">View Sample EFGs</a>
+								</div>
+							</td>
+							<td class="horizspacer" />
+							<td class="icon">
+								<a href="Links.html" onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');">
+									<img name="image2" src="configicon.jpg" width="118" height="101" border="0" alt="Configure Your EFG" />
+								</a>
+								<div id="configefg" onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');">
+									<a class="blinkmouseoff" href="Links.html">Configure Your EFG</a>
+								</div>
+							</td>
+							<td class="horizspacer" />
+							<td class="icon">
+								<a href="http://efg.cs.umb.edu/EFGsoftware/" onmouseover="image3.src='downloadicon_mouseover.jpg'; showMenu('downloadefg');" onmouseout="image3.src='downloadicon.jpg'; hideMenu('downloadefg');">
+									<img name="image3" src="downloadicon.jpg" width="118" height="101" border="0" alt="Download the EFG Software" />
+								</a>
+								<div id="downloadefg" onmouseover="image3.src='downloadicon_mouseover.jpg'; showMenu('downloadefg');" onmouseout="image3.src='downloadicon.jpg'; hideMenu('downloadefg');">
+									<a class="blinkmouseoff" href="http://efg.cs.umb.edu/EFGsoftware/">Download the EFG Software</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="vertspacer"/>
+							<td class="horizspacer" />
+							<td class="vertspacer"/>
 
-<script language="JavaScript">
-
-function initImages(){
-
-}
-function showMenu(currentMenuID){
-   var a = document.getElementById(currentMenuID).childNodes[0];
-  a.className = 'blinkmouseover';
-}
-function hideMenu(currentMenuID){
-   var a = document.getElementById(currentMenuID).childNodes[0];
-   a.className = 'blinkmouseoff';
-}
-</script>
-
-</head>
-
-<body onload="initImages();">
-<table class="frame">
-<tr>
-<td>
-
-<table class="main">
-<tr>
-       <td COLSPAN="5" class="title">
-	   <img src="efgpagelogo.jpg" width="559" height="59" border="0" alt="The Electronic Field Guide Project" align="middle">
-	   </td>
-</tr>
-<tr>
-       <td class="icon">
-	   		<a href="http://panda.cs.umb.edu/efg2/TypePage.jsp" onmouseover="image1.src='viewicon_mouseover.jpg'; showMenu('viewefg');" onmouseout="image1.src='viewicon.jpg'; hideMenu('viewefg')">
-		<img name="image1" src="viewicon.jpg" width="118" height="101" border=0 alt="View Sample EFGs"></a>
-	   <div id="viewefg" onmouseover="image1.src='viewicon_mouseover.jpg'; showMenu('viewefg');" onmouseout="image1.src='viewicon.jpg'; hideMenu('viewefg')"><a class="blinkmouseoff" href="http://panda.cs.umb.edu/efg2/TypePage.jsp" >View Sample EFGs</a></div>
-
-	   </td>
-	   <td class="horizspacer"></td>
-	   <td class="icon">
-	   		<a href="Links.html" onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');">
-		<img name="image2" src="configicon.jpg" width="118" height="101" border=0 alt="Configure Your EFG"></a>
-	   <div id="configefg"  onmouseover="image2.src='configicon_mouseover.jpg'; showMenu('configefg');" onmouseout="image2.src='configicon.jpg'; hideMenu('configefg');"><a class="blinkmouseoff" href="Links.html">Configure Your EFG</a></div>
-	   </td>
-	   <td class="horizspacer"></td>
-
-       <td class="icon">
-	   		<a href="" onmouseover="image3.src='downloadicon_mouseover.jpg'; showMenu('downloadefg');" onmouseout="image3.src='downloadicon.jpg'; hideMenu('downloadefg');">
-	   <img name="image3" src="downloadicon.jpg" width="118" height="101" border="0" alt="Download the EFG Software"></a>
-	   <div id="downloadefg" onmouseover="image3.src='downloadicon_mouseover.jpg'; showMenu('downloadefg');" onmouseout="image3.src='downloadicon.jpg'; hideMenu('downloadefg');"><a class="blinkmouseoff" href="" >Download the EFG Software</a></div>
-	   </td>
-</tr>
-<tr>
-		<td class="vertspacer">
-		</td>
-
-	   <td class="horizspacer"></td>
-		<td class="vertspacer">
-		</td>
-	   <td class="horizspacer"></td>
-		<td class="vertspacer">
-		</td>
-</tr>
-<tr>
-		<td class="">
-		</td>
-
-	   <td class="horizspacer"></td>
-		<td class="">
-		</td>
-	   <td class="horizspacer"></td>
-		<td class="logos">
-		<a href="http://efg.cs.umb.edu"><img src="efglogo.gif" width="52" height="56" border="0" alt="EFG Home Page"></a><a href="http://www.umb.edu"><img src="umblogo.gif" width="54" height="58" border="0" alt="UMass Boston"></a>
-		</td>
-</tr>
-<tr>
-       <td class="credits" COLSPAN="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.<p> Icon credits: View from J.F. Orth, Config by Myownbiggestfan, Download by Auntie_P.</p></td>
-
-</tr>
-<tr>
-	   <td class="timestamp" COLSPAN="5"><script language="JavaScript" type="text/javascript">
-<!--
-
-         document.write("Last Modified " + document.lastModified)
-
-// -->
-</script></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
+							<td class="horizspacer" />
+							<td class="vertspacer"/>
+						</tr>
+						<tr>
+							<td class=""></td>
+							<td class="horizspacer" />
+							<td class=""></td>
+							<td class="horizspacer" />
+							<td class="logos">
+								<a href="http://efg.cs.umb.edu">
+									<img src="efglogo.gif" width="52" height="56" border="0" alt="EFG Home Page" />
+								</a>
+								<a href="http://www.umb.edu">
+									<img src="umblogo.gif" width="54" height="58" border="0" alt="UMass Boston" />
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="credits" COLSPAN="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.<p> Icon credits: View from J.F. Orth, Config by Myownbiggestfan, Download by Auntie_P.</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="timestamp" COLSPAN="5">
+								<script language="JavaScript" type="text/javascript">
+									<!--
+									 document.write("Last Modified " + document.lastModified)
+									// -->
+								</script>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>

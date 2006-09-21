@@ -2,148 +2,337 @@
 	<head>
 		<title>The EFG Project - Electronic Field Guides</title>
 		<style>
+
 	body {
+
 	background-color: #efffd5;
+
 	}
+
 	table.header {
+
 	background-color: #efffd5;
+
 	border: 0px ridge #B7E4C3;
+
 	margin-left: auto;
+
 	margin-right: auto;
+
 	margin-bottom: 0px;
+
 	padding-bottom: 0px;
+
 	align: center;
+
 	}
+
 	table.iconbar {
+
 	vertical-align: bottom;
+
 	}
+
 	table.frame {
+
 	background-color: #CCFF99;
+
 	border: 3px ridge #B7E4C3;
+
 	margin-left: auto;
+
 	margin-right: auto;
+
 	margin-top: 0px;
+
 	padding-top: 0px;
+
 	align: center;
+
 	}
+
 	table.main {
+
 	width: 547px;
+
 	background-color: #FFF;
+
 	border: 5px solid #FFF;
+
 	margin-left: auto;
+
 	margin-right: auto;
+
 	align: center;
+
 	}
+
 	td {
+
 	border: 0px solid black;
+
 	}
+
 	td.title {
+
 	padding-bottom: 20px;
+
 	font-family: sans, arial, verdana;
+
 	font-size: 16px;
+
 	font-weight: bold;
+
 	color: #660033;
+
 	padding-top: 5px;
+
 	padding-left: 5px;
+
 	}
+
 	td.list {
+
 	width: 90%;
+
 	vertical-align: top;
+
 	margin-left: auto;
+
 	margin-right: auto;
+
 	text-align : left;
+
 	padding-bottom: 20px;
+
 	}
+
 	td.minilogo {
+
 	vertical-align: bottom;
+
 	padding-left: 0px;
+
 	padding-right: 10px;
+
 	}
+
 	td.iconbar {
+
 	align: right;
+
 	margin-bottom: 0px;
+
 	margin-right: 0px;
+
 	padding-bottom: 0px;
+
 	padding-right: 0px;
+
 	}
+
 	td.icontext {
+
 	text-align: center;
+
 	font-family: sans, arial, verdana;
+
 	font-size: 9px;
+
 	font-weight: normal;
+
 	margin-top: 0px;
+
 	padding-top: 0px;
+
 	}
+
 	td.credits {
+
 	font-family: sans, arial, verdana;
+
 	font-size: 9px;
+
 	font-weight: normal;
+
 	padding-left: 0px;
+
 	padding-top: 4px;
+
 	border-top: 1px solid black;
+
 	}
+
 	td.timestamp {
+
 	font-family: sans, arial, verdana;
+
 	font-size: 9px;
+
 	font-style: italic;
+
 	font-weight: normal;
+
 	padding-left: 0px;
+
 	padding-top: 10px;
+
 	}
+
 	td.horizspacer {
-	width: 6%;
+
+	width: 0px;
+
 	}
+
 	td.vertspacer {
+
 	height: 150px;
+
 	}
+
 	td.logos {
+
 	text-align: right;
+
 	padding-top: 20px;
+
 	}
-	ul {
+
+	td.efglisttitle {
+
 	font-family: sans, arial, verdana;
+
 	font-size: 12px;
+
+	width: 65%;
+
+	padding-right: 10px;
+
+	padding-bottom: 5px;
+
 	}
-	#viewefg {
+
+	td.efglistlinks {
+
 	font-family: sans, arial, verdana;
-	font-size: 14px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align : center;
-	width: 80%;
-	}
-	#configefg {
-	font-family: sans, arial, verdana;
-	font-size: 14px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align : center;
-	width: 80%;
-	}
-	#downloadefg {
-	font-family: sans, arial, verdana;
-	font-size: 14px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	text-align: center;
-	}
-	a.blinklinks {
-	font-family: sans, arial, verdana;
+
 	font-size: 12px;
-	font-weight: bold;
-	color: #660033;
+
+	}
+
+	a.efglist {
+
+	font-family: sans, arial, verdana;
+
+	font-size: 10px;
+
 	text-decoration: none;
+
+	color: #006633;
+
 	}
+
+	a.efglist:hover {
+
+	font-family: sans, arial, verdana;
+
+	font-size: 10px;
+
+	text-decoration: underline;
+
+	color: #000;
+
+	}
+
+	ul {
+
+	font-family: sans, arial, verdana;
+
+	font-size: 12px;
+
+	}
+
+	#viewefg {
+
+	font-family: sans, arial, verdana;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	color: #660033;
+
+	padding-top: 25px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	text-align : center;
+
+	width: 80%;
+
+	}
+
+	#configefg {
+
+	font-family: sans, arial, verdana;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	color: #660033;
+
+	padding-top: 25px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	text-align : center;
+
+	width: 80%;
+
+	}
+
+	#downloadefg {
+
+	font-family: sans, arial, verdana;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	color: #660033;
+
+	padding-top: 25px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	width: 80%;
+
+	text-align: center;
+
+	}
+
+	a.blinklinks {
+
+	font-family: sans, arial, verdana;
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+	color: #660033;
+
+	text-decoration: none;
+
+	}
+
 	</style>
 	</head>
 	<body>
@@ -166,7 +355,7 @@
 								</a>
 							</td>
 							<td class="iconbar">
-								<a href="http://efg.cs.umb.edu/EFGsoftware/">
+								<a href="">
 									<img src="downloadiconmini.jpg" width="41" border="0" alt="Download the EFG Software" title="Download the EFG Software" />
 								</a>
 							</td>
@@ -185,58 +374,20 @@
 				<td>
 					<table class="main">
 						<tr>
-							<td colspan="5" class="title">
-								Configure Your EFG
-						   </td>
+							<td colspan="5" class="title">Search/Browse EFG Datasources</td>
 						</tr>
 						<tr>
-							<td class="list">
-								<ul>
-									<li>Configure Templates
-										<ul>
-											<li>
-												<a href="/efg2/templateJSP/ConfigurePageBegin.jsp">To Configure Page For Beginners</a>
-											</li>
-											<li>
-												<a href="/efg2/templateJSP/ConfigurePageInter.jsp">To Configure Page For Intermediate users</a>
-											</li>
-											<li>
-												<a href="/efg2/templateJSP/ConfigurePage.jsp">To Configure Page For Advanced users</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</td>
-						</tr>
-						<tr>
-							<td class="list">
-								<ul>
-									<li>Upload Extras
-										<ul>
-											<li>
-												<a href="/efg2/imageUpload.jsp">Upload images for a template</a> (header images and other graphics to enhance a template)</li>
-											<li>
-												<a href="/efg2/cssUpload.jsp">Upload css for a template</a> (change the default style code for any template)</li>
-											<li>
-												<a href="/efg2/javascriptUpload.jsp">Upload javascript for a template</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</td>
-						</tr>
-						<tr>
-							<td class="list">
-								<ul>
-									<li>View Links</li>
-									<ul>
-										<li>
-											<a href="/efg2/TypePage.jsp">Front Page to Search</a>
-										</li>
-										<li>
-											<a href="/efg2/DirectURLs2SearchResultsPages.jsp">View URLs for all EFGs</a> (handy for copying and pasting links to you EFG on web pages)</li>
-									</ul>
-								</ul>
+							<td colspan="5">
+								<table>
+									<tr>
+										<td class="efglisttitle">American Plants in Europe </td>
+										<td class="efglistlinks">
+											<a class="efglist" href="" title="search datasource">search</a> | 
+											<a class="efglist" href="" title="browse a list of taxon names">browse lists</a> | 
+											<a class="efglist" href="" title="browse  plates">browse plates</a>
+										</td>
+									</tr>
+								</table>
 							</td>
 						</tr>
 						<tr>
@@ -247,14 +398,14 @@
 							<td class="logos">
 								<a href="http://efg.cs.umb.edu">
 									<img src="efglogo.gif" width="52" height="56" border="0" alt="EFG Home Page" />
-								</a>
+									</a>
 								<a href="http://www.umb.edu">
 									<img src="umblogo.gif" width="54" height="58" border="0" alt="UMass Boston" />
 								</a>
 							</td>
 						</tr>
 						<tr>
-							<td class="credits" colspan="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.</td>
+							<td class="credits" colspan="5">&amp;copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.</td>
 						</tr>
 						<tr>
 							<td class="timestamp" colspan="5">
