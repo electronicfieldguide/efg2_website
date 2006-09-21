@@ -1,0 +1,227 @@
+	body {
+	background-color: #efffd5;
+	}
+	body.main {
+	background-color: #FFFFFF;
+	}
+	table.header {
+	background-color: #efffd5;
+	border: 0px ridge #B7E4C3;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	align: center;
+	}
+	table.iconbar {
+	vertical-align: bottom;
+	}
+	table.frameindex {
+	background-color: #CCFF99;
+	border: 3px ridge #B7E4C3;
+	margin-left: auto;
+	margin-right: auto;
+	align: center;
+	}
+	table.frame {
+	background-color: #CCFF99;
+	border: 3px ridge #B7E4C3;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+	align: center;
+	}
+	table.mainindex {
+	width: 547px;
+	background-color: #efffd5;
+	border: 5px solid #efffd5;
+	margin-left: auto;
+	margin-right: auto;
+	align: center;
+	}
+	table.main {
+	width: 547px;
+	background-color: #FFF;
+	border: 5px solid #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	align: center;
+	}
+	td {
+	border: 0px solid black;
+	}
+	td.titleindex {
+	padding-bottom: 75px;
+	padding-top: 10px;
+	}
+	td.title {
+	padding-bottom: 20px;
+	font-family: sans, arial, verdana;
+	font-size: 16px;
+	font-weight: bold;
+	color: #660033;
+	padding-top: 5px;
+	padding-left: 5px;
+	}
+	td.list {
+	width: 90%;
+	vertical-align: top;
+	margin-left: auto;
+	margin-right: auto;
+	text-align : left;
+	padding-bottom: 20px;
+	}
+	td.minilogo {
+	vertical-align: bottom;
+	padding-left: 0px;
+	padding-right: 10px;
+	}
+	td.iconbar {
+	align: right;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	}
+	td.icon {
+	width: 29%;
+	vertical-align: top;
+	margin-left: auto;
+	margin-right: auto;
+	text-align : center;
+	}
+	td.icontext {
+	text-align: center;
+	font-family: sans, arial, verdana;
+	font-size: 9px;
+	font-weight: normal;
+	margin-top: 0px;
+	padding-top: 0px;
+	}
+	td.copyright {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 0px;
+	padding-top: 4px;
+	border-top: 1px solid black;
+	}
+	td.credits {
+	font-family: sans, arial, verdana;
+	font-size: 9px;
+	font-weight: normal;
+	padding-left: 0px;
+	padding-top: 4px;
+	}
+	td.timestamp {
+	font-family: sans, arial, verdana;
+	font-size: 9px;
+	font-style: italic;
+	font-weight: normal;
+	padding-left: 0px;
+	padding-top: 10px;
+	}
+	td.horizspacer {
+	width: 6%;
+	}
+	td.vertspacer {
+	height: 150px;
+	}
+	td.logos {
+	text-align: right;
+	padding-top: 20px;
+	}
+	td.efglisttitle {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	width: 65%;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	}
+	td.efglistlinks {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	}
+	ul {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	}
+	#viewefg {
+	font-family: sans, arial, verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #660033;
+	padding-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align : center;
+	width: 80%;
+	}
+	#configefg {
+	font-family: sans, arial, verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #660033;
+	padding-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align : center;
+	width: 80%;
+	}
+	#downloadefg {
+	font-family: sans, arial, verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #660033;
+	padding-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	text-align: center;
+	}
+	a {
+	text-decoration: none;
+	}
+	a.li {
+	color: #006633;
+	font-weight: bold;
+	}
+	a.li:hover {
+	text-decoration: underline;
+	}
+	a.efglist {
+	font-family: sans, arial, verdana;
+	font-size: 10px;
+	text-decoration: none;
+	color: #006633;
+	}
+	a.efglist:hover {
+	font-family: sans, arial, verdana;
+	font-size: 10px;
+	text-decoration: underline;
+	color: #000;
+	}
+	a.blinkmouseover {
+	font-family: arial, verdana, helvetica, sans;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	background-color: #B7E4C3;
+	text-decoration: none;
+	padding: 2px;
+	}
+	a.blinkmouseoff {
+	font-family: arial, verdana, helvetica, sans;
+	font-size: 12px;
+	font-weight: bold;
+	color: #15660e;
+	text-decoration: none;
+	}
+	a.blinklinks {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #660033;
+	text-decoration: none;
+	}

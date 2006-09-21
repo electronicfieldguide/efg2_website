@@ -1,156 +1,13 @@
 <html>
 	<head>
 		<title>The EFG Project - Electronic Field Guides</title>
-		<style>
-	body {
-	background-color: #efffd5;
-	}
-	table.header {
-	background-color: #efffd5;
-	border: 0px ridge #B7E4C3;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-	align: center;
-	}
-	table.iconbar {
-	vertical-align: bottom;
-	}
-	table.frame {
-	background-color: #CCFF99;
-	border: 3px ridge #B7E4C3;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0px;
-	padding-top: 0px;
-	align: center;
-	}
-	table.main {
-	width: 547px;
-	background-color: #FFF;
-	border: 5px solid #FFF;
-	margin-left: auto;
-	margin-right: auto;
-	align: center;
-	}
-	td {
-	border: 0px solid black;
-	}
-	td.title {
-	padding-bottom: 20px;
-	font-family: sans, arial, verdana;
-	font-size: 16px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 5px;
-	padding-left: 5px;
-	}
-	td.list {
-	width: 90%;
-	vertical-align: top;
-	margin-left: auto;
-	margin-right: auto;
-	text-align : left;
-	padding-bottom: 20px;
-	}
-	td.minilogo {
-	vertical-align: bottom;
-	padding-left: 0px;
-	padding-right: 10px;
-	}
-	td.iconbar {
-	align: right;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	padding-bottom: 0px;
-	padding-right: 0px;
-	}
-	td.icontext {
-	text-align: center;
-	font-family: sans, arial, verdana;
-	font-size: 9px;
-	font-weight: normal;
-	margin-top: 0px;
-	padding-top: 0px;
-	}
-	td.credits {
-	font-family: sans, arial, verdana;
-	font-size: 9px;
-	font-weight: normal;
-	padding-left: 0px;
-	padding-top: 4px;
-	border-top: 1px solid black;
-	}
-	td.timestamp {
-	font-family: sans, arial, verdana;
-	font-size: 9px;
-	font-style: italic;
-	font-weight: normal;
-	padding-left: 0px;
-	padding-top: 10px;
-	}
-	td.horizspacer {
-	width: 6%;
-	}
-	td.vertspacer {
-	height: 150px;
-	}
-	td.logos {
-	text-align: right;
-	padding-top: 20px;
-	}
-	ul {
-	font-family: sans, arial, verdana;
-	font-size: 12px;
-	}
-	#viewefg {
-	font-family: sans, arial, verdana;
-	font-size: 14px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align : center;
-	width: 80%;
-	}
-	#configefg {
-	font-family: sans, arial, verdana;
-	font-size: 14px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align : center;
-	width: 80%;
-	}
-	#downloadefg {
-	font-family: sans, arial, verdana;
-	font-size: 14px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	text-align: center;
-	}
-	a.blinklinks {
-	font-family: sans, arial, verdana;
-	font-size: 12px;
-	font-weight: bold;
-	color: #660033;
-	text-decoration: none;
-	}
-	</style>
+		<LINK REL=STYLESHEET HREF="efg2web.css" TYPE="text/css">
 	</head>
 	<body>
 		<table class="header">
 			<tr>
 				<td class="minilogo">
-					<img src="efgpagelogomini.jpg" width="410" height="38" border="0" alt="The Electronic Field Guide Project" align="left" />
+					<a href="index.html"><img src="efgpagelogomini.jpg" width="410" height="38" border="0" alt="The Electronic Field Guide Project" title="The Electronic Field Guide Project" align="left" /></a>
 				</td>
 				<td>
 					<table class="iconbar">
@@ -195,13 +52,13 @@
 									<li>Configure Templates
 										<ul>
 											<li>
-												<a href="/efg2/templateJSP/ConfigurePageBegin.jsp">To Configure Page For Beginners</a>
+												<a class="li" href="/efg2/templateJSP/ConfigurePageBegin.jsp">Beginners</a>
 											</li>
 											<li>
-												<a href="/efg2/templateJSP/ConfigurePageInter.jsp">To Configure Page For Intermediate users</a>
+												<a class="li" href="/efg2/templateJSP/ConfigurePageInter.jsp">Intermediate Users</a>
 											</li>
 											<li>
-												<a href="/efg2/templateJSP/ConfigurePage.jsp">To Configure Page For Advanced users</a>
+												<a class="li" href="/efg2/templateJSP/ConfigurePage.jsp">Advanced Users</a>
 											</li>
 										</ul>
 									</li>
@@ -214,11 +71,11 @@
 									<li>Upload Extras
 										<ul>
 											<li>
-												<a href="/efg2/imageUpload.jsp">Upload images for a template</a> (header images and other graphics to enhance a template)</li>
+												<a class="li" href="/efg2/imageUpload.jsp">Upload images for a template</a><br>(header images and other graphics to enhance a template)</li>
 											<li>
-												<a href="/efg2/cssUpload.jsp">Upload css for a template</a> (change the default style code for any template)</li>
+												<a class="li" href="/efg2/cssUpload.jsp">Upload css for a template</a><br>(change the default style code for any template)</li>
 											<li>
-												<a href="/efg2/javascriptUpload.jsp">Upload javascript for a template</a>
+												<a class="li" href="/efg2/javascriptUpload.jsp">Upload javascript for a template</a>
 											</li>
 										</ul>
 									</li>
@@ -231,36 +88,42 @@
 									<li>View Links</li>
 									<ul>
 										<li>
-											<a href="/efg2/TypePage.jsp">Front Page to Search</a>
+											<a class="li" href="/efg2/TypePage.jsp">Front Page to Search</a>
 										</li>
 										<li>
-											<a href="/efg2/DirectURLs2SearchResultsPages.jsp">View URLs for all EFGs</a> (handy for copying and pasting links to you EFG on web pages)</li>
+											<a class="li" href="/efg2/DirectURLs2SearchResultsPages.jsp">View URLs for all EFGs</a><br>(handy for copying and pasting links to you EFG on web pages)</li>
 									</ul>
 								</ul>
 							</td>
 						</tr>
 						<tr>
-							<td class="" />
-							<td class="horizspacer" />
-							<td class="" />
-							<td class="horizspacer" />
+							<td class="" /></td>
+							<td class="horizspacer" /></td>
+							<td class="" /></td>
 							<td class="logos">
 								<a href="http://efg.cs.umb.edu">
-									<img src="efglogo.gif" width="52" height="56" border="0" alt="EFG Home Page" />
+									<img src="efglogo.gif" width="52" height="56" border="0" alt="EFG Home Page" title="EFG Home Page" />
 								</a>
+							</td>
+							<td class="logos">
 								<a href="http://www.umb.edu">
-									<img src="umblogo.gif" width="54" height="58" border="0" alt="UMass Boston" />
+									<img src="umblogo.gif" width="54" height="58" border="0" alt="UMass Boston Home Page" title="UMass Boston Home Page" />
 								</a>
 							</td>
 						</tr>
 						<tr>
-							<td class="credits" colspan="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.</td>
+							<td class="copyright" COLSPAN="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.
+							</td>
 						</tr>
 						<tr>
-							<td class="timestamp" colspan="5">
+							<td class="credits" COLSPAN="5">Icon photos via Flickr, from left to right: urtica, Myownbiggestfan, Auntie_P.
+							</td>
+						</tr>
+						<tr>
+							<td class="timestamp" COLSPAN="5">
 								<script language="JavaScript" type="text/javascript">
 									<!--
-										 document.write("Last Modified " + document.lastModified)
+									 document.write("Last Modified " + document.lastModified)
 									// -->
 								</script>
 							</td>

@@ -1,114 +1,7 @@
 <html>
 	<head>
 		<title>The EFG Project - Electronic Field Guides</title>
-		<style>
-	body {
-	background-color: #FFFFFF;
-	}
-	table.frame {
-	background-color: #CCFF99;
-	border: 3px ridge #B7E4C3;
-	margin-left: auto;
-	margin-right: auto;
-	align: center;
-	}
-	table.main {
-	width: 547px;
-	background-color: #efffd5;
-	border: 5px solid #efffd5;
-	margin-left: auto;
-	margin-right: auto;
-	align: center;
-	}
-	td {
-	border: 0px solid black;
-	}
-	td.title {
-	padding-bottom: 75px;
-	padding-top: 10px;
-	}
-	td.icon {
-	width: 29%;
-	vertical-align: top;
-	margin-left: auto;
-	margin-right: auto;
-	text-align : center;
-	}
-	td.credits {
-	font-family: sans, arial, verdana;
-	font-size: 9px;
-	font-weight: normal;
-	padding-left: 0px;
-	padding-top: 4px;
-	border-top: 1px solid black;
-	}
-	td.timestamp {
-	font-family: sans, arial, verdana;
-	font-size: 9px;
-	font-style: italic;
-	font-weight: normal;
-	padding-left: 0px;
-	padding-top: 10px;
-	}
-	td.horizspacer {
-	width: 6%;
-	}
-	td.vertspacer {
-	height: 150px;
-	}
-	td.logos {
-	text-align: right;
-	}
-	#viewefg {
-	font-family: sans, arial, verdana;
-	font-size: 14px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align : center;
-	width: 80%;
-	}
-	#configefg {
-	font-family: sans, arial, verdana;
-	font-size: 14px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align : center;
-	width: 80%;
-	}
-	#downloadefg {
-	font-family: sans, arial, verdana;
-	font-size: 14px;
-	font-weight: bold;
-	color: #660033;
-	padding-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	text-align: center;
-	}
-	a.blinkmouseover {
-	font-family: arial, verdana, helvetica, sans;
-	font-size: 12px;
-	font-weight: bold;
-	color: #000;
-	background-color: #B7E4C3;
-	text-decoration: none;
-	padding: 2px;
-	}
-	a.blinkmouseoff {
-	font-family: arial, verdana, helvetica, sans;
-	font-size: 12px;
-	font-weight: bold;
-	color: #15660e;
-	text-decoration: none;
-	}
-	</style>
+		<LINK REL=STYLESHEET HREF="efg2web.css" TYPE="text/css">
 	<script language="JavaScript">
 		function initImages(){
 		
@@ -129,13 +22,13 @@
 		}
 	</script>
 	</head>
-	<body onload="initImages();">
-		<table class="frame">
+	<body class="main" onload="initImages();">
+		<table class="frameindex">
 			<tr>
 				<td>
-					<table class="main">
+					<table class="mainindex">
 						<tr>
-							<td COLSPAN="5" class="title">
+							<td COLSPAN="5" class="titleindex">
 								<img src="efgpagelogo.jpg" width="559" height="59" border="0" alt="The Electronic Field Guide Project" align="middle" />
 							</td>
 						</tr>
@@ -168,29 +61,32 @@
 							</td>
 						</tr>
 						<tr>
-							<td class="vertspacer"/>
-							<td class="horizspacer" />
-							<td class="vertspacer"/>
-
-							<td class="horizspacer" />
-							<td class="vertspacer"/>
+							<td class="vertspacer"/></td>
+							<td class="horizspacer" /></td>
+							<td class="vertspacer"/></td>
+							<td class="horizspacer" /></td>
+							<td class="vertspacer"/></td>
 						</tr>
 						<tr>
 							<td class=""></td>
-							<td class="horizspacer" />
+							<td class="horizspacer" /></td>
 							<td class=""></td>
-							<td class="horizspacer" />
+							<td class="horizspacer" /></td>
 							<td class="logos">
 								<a href="http://efg.cs.umb.edu">
-									<img src="efglogo.gif" width="52" height="56" border="0" alt="EFG Home Page" />
+									<img src="efglogo.gif" width="52" height="56" border="0" alt="EFG Home Page" title="EFG Home Page" />
 								</a>
 								<a href="http://www.umb.edu">
-									<img src="umblogo.gif" width="54" height="58" border="0" alt="UMass Boston" />
+									<img src="umblogo.gif" width="54" height="58" border="0" alt="UMass Boston Home Page" title="UMass Boston Home Page" />
 								</a>
 							</td>
 						</tr>
 						<tr>
-							<td class="credits" COLSPAN="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.<p> Icon credits: View from J.F. Orth, Config by Myownbiggestfan, Download by Auntie_P.</p>
+							<td class="copyright" COLSPAN="5">&copy; 2006 EFG Group and UMass Boston. This research is supported in part by the NSF.
+							</td>
+						</tr>
+						<tr>
+							<td class="credits" COLSPAN="5">Icon photos via Flickr, from left to right: urtica, Myownbiggestfan, Auntie_P.
 							</td>
 						</tr>
 						<tr>
