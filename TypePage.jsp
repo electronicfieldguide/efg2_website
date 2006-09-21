@@ -193,6 +193,7 @@
 			</tr>
 		</table>
 	</td>
+</tr>
 </table>
 
 <table class="frame">
@@ -292,6 +293,7 @@
 		</table>
 		
 		</td>
+		</tr>
 		<tr>
 		<td class=""></td>
 	   <td class="horizspacer"></td>
