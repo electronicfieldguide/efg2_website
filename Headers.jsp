@@ -11,7 +11,7 @@
 	   StringBuffer mainTableConstant =new StringBuffer(ALL_TABLE_NAME + "=" + mainTableName);
 
 	   
-	String linksFile = "Links.jsp?"+ mainTableConstant.toString(); 
+	String linksFile = "Links.html"; 
 	String typePageFile = "TypePage.jsp?"+ mainTableConstant.toString();;
 	
 		
