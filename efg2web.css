@@ -147,6 +147,19 @@
 	font-family: sans, arial, verdana;
 	font-size: 12px;
 	}
+	li.header {
+	list-style: none;
+	font-family: sans, arial, verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	}
+	li.item {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	}
 	#viewefg {
 	font-family: sans, arial, verdana;
 	font-size: 14px;
