@@ -48,6 +48,14 @@
 	margin-right: auto;
 	align: center;
 	}
+	table.directurl {
+	width: 700px;
+	background-color: #FFF;
+	border: 5px solid #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	align: center;
+	}
 	td {
 	border: 0px solid black;
 	}
@@ -135,13 +143,37 @@
 	td.efglisttitle {
 	font-family: sans, arial, verdana;
 	font-size: 12px;
-	width: 65%;
-	padding-right: 10px;
-	padding-bottom: 5px;
+	padding-right: 15px;
+	padding-bottom: 15px;
 	}
 	td.efglistlinks {
 	font-family: sans, arial, verdana;
 	font-size: 12px;
+	padding-bottom: 15px;
+	}
+	td.datatype {
+	font-family: sans, arial, verdana;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000000;
+	white-space: nowrap;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	}
+	td.datasourcename {
+	font-family: sans, arial, verdana;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000000;
+	padding-bottom: 15px;
+	}
+	td.actionlinks {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	whitespace: nowrap;
 	}
 	ul {
 	font-family: sans, arial, verdana;
@@ -192,6 +224,24 @@
 	margin-right: auto;
 	width: 80%;
 	text-align: center;
+	}
+	.datasourcehead {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+	white-space: nowrap;
+	border-bottom: 1px solid #000000;
+	}
+	.subtitle {
+	padding-bottom: 0px;
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	font-weight: normal;
+	color: #660033;
+	padding-top: 7px;
+	padding-left: 0px;
 	}
 	a {
 	text-decoration: none;
