@@ -151,14 +151,20 @@
 	td.efglisttitle {
 	font-family: sans, arial, verdana;
 	font-size: 12px;
-	width: 65%;
 	padding-right: 15px;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
+	vertical-align: top;
 	}
 	td.efglistlinks {
 	font-family: sans, arial, verdana;
 	font-size: 12px;
 	padding-bottom: 0px;
+	}
+	td.efglistlinksdirecturl {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	padding-bottom: 20px;
+	vertical-align: top;
 	}
 	td.datatype {
 	font-family: sans, arial, verdana;
@@ -168,14 +174,16 @@
 	white-space: nowrap;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 20px;
+	vertical-align: top;
 	}
 	td.datasourcename {
 	font-family: sans, arial, verdana;
 	font-size: 10px;
 	text-decoration: none;
 	color: #000000;
-	padding-bottom: 15px;
+	padding-bottom: 20px;
+	vertical-align: top;
 	}
 	td.actionlinks {
 	font-family: sans, arial, verdana;
