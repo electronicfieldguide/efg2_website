@@ -151,13 +151,14 @@
 	td.efglisttitle {
 	font-family: sans, arial, verdana;
 	font-size: 12px;
+	width: 65%;
 	padding-right: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 0px;
 	}
 	td.efglistlinks {
 	font-family: sans, arial, verdana;
 	font-size: 12px;
-	padding-bottom: 15px;
+	padding-bottom: 0px;
 	}
 	td.datatype {
 	font-family: sans, arial, verdana;
