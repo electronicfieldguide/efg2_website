@@ -152,6 +152,14 @@
 	font-family: sans, arial, verdana;
 	font-size: 12px;
 	padding-right: 15px;
+	padding-bottom: 0px;
+	width: 65%;
+	vertical-align: top;
+	}
+	td.efglisttitledirecturl {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	padding-right: 15px;
 	padding-bottom: 20px;
 	vertical-align: top;
 	}
