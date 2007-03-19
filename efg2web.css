@@ -221,6 +221,11 @@
 	padding-top: 10px;
 	padding-bottom: 15px;
 	}
+	td.menu {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	padding-bottom: 20px;
+	}
 	ul {
 	font-family: sans, arial, verdana;
 	font-size: 12px;
@@ -333,4 +338,11 @@
 	font-weight: bold;
 	color: #660033;
 	text-decoration: none;
+	}
+	.menutext {
+	font-weight: bold;
+	font-size: 14px;
+	}
+	.input {
+	padding-left: 20px;
 	}
