@@ -225,6 +225,15 @@
 	font-family: sans, arial, verdana;
 	font-size: 12px;
 	padding-bottom: 20px;
+	width: 700px;
+	}
+	td.minitemptext {
+	font-family: sans, arial, verdana;
+	font-size: 11px;
+	text-align: center;
+	}
+	img.miniimg {
+	border: 2px groove #333333;
 	}
 	ul {
 	font-family: sans, arial, verdana;
@@ -340,9 +349,28 @@
 	text-decoration: none;
 	}
 	.menutext {
+	font-family: sans, arial, verdana;
 	font-weight: bold;
 	font-size: 14px;
+	color: #000;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	}
 	.input {
 	padding-left: 20px;
+	}
+	.iconrow {
+	width: 660px;
+	clear: left;
+	padding-bottom: 10px;
+	}
+	.minitemp {
+	width: 210px;
+	float: left;
+	padding: 5px;
+	}
+	.submit {
+	clear: left;
+	padding-top: 20px;
+	text-align: center;
 	}

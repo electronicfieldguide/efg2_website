@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- $Id$-->
+<title>The EFG Project - Electronic Field Guides</title>
+<link rel="stylesheet" href="efg2web.css" type="text/css">
+		<script type="text/javascript" language="JavaScript">
+			<!--
+			var fActiveMenu = false;
+			var oOverMenu = false;
+			
+			function mouseSelect(e)
+			{
+				if (fActiveMenu)
+				{
+					if (oOverMenu == false)
+					{
+						oOverMenu = false;
+						document.getElementById(fActiveMenu).style.display = "none";
+						fActiveMenu = false;
+						return false;
+					}
+					return false;
+				}
+				return true;
+			}
+			
+			function menuActivate(idEdit, idMenu, idSel)
+			{
+				if (fActiveMenu) return mouseSelect(0);
+			
+				oMenu = document.getElementById(idMenu);
+				oEdit = document.getElementById(idEdit);
+				nTop = oEdit.offsetTop + oEdit.offsetHeight;
+				nLeft = oEdit.offsetLeft;
+				while (oEdit.offsetParent != document.body)
+				{
+					oEdit = oEdit.offsetParent;
+					nTop += oEdit.offsetTop;
+					nLeft += oEdit.offsetLeft;
+				}
+				oMenu.style.left = nLeft;
+				oMenu.style.top = nTop;
+				oMenu.style.display = "";
+				fActiveMenu = idMenu;
+				document.getElementById(idSel).focus();
+				return false;
+			}
+			
+			function textSet(idEdit, text)
+			{
+				document.getElementById(idEdit).value = text;
+				oOverMenu = false;
+				mouseSelect(0);
+				document.getElementById(idEdit).focus();
+			}
+			
+			function comboKey(idEdit, idSel)
+			{
+				if (window.event.keyCode == 13 || window.event.keyCode == 32)
+					textSet(idEdit,idSel.value);
+				else if (window.event.keyCode == 27)
+				{
+					mouseSelect(0);
+					document.getElementById(idEdit).focus();
+				}
+			}
+			function valid(idEdit) {
+				txt = document.getElementById(idEdit).value ;
+				if(txt == '') {
+				  alert('You need to type your choice into the text box  or make a selection from the list');
+				  return false;
+				}
+				return true;
+			}
+			document.onmousedown = mouseSelect;
+		//-->
+		</script>
+</head>
+<body>
+<table class="header">
+<tr>
+<td class="minilogo"><a href="index.html"><img src="efgpagelogomini.jpg" width="410" height="38" border="0" alt="The Electronic Field Guide Project" title="The Electronic Field Guide Project" align= 
+"left"></a></td>
+<td>
+<table class="iconbar">
+<tr>
+<td class="iconbar"><a href="TypePage.jsp"><img src="viewiconmini.jpg" width="41" border="0" alt="View Sample EFGs" title="View Sample EFGs"></a></td>
+<td class="iconbar"><a href="Links.html"><img src="configiconmini.jpg" width="41" border="0" alt="Configure Your EFG" title="Configure Your EFG - Login Required"></a></td>
+<td class="iconbar"><a href="http://efg.cs.umb.edu/EFGsoftware/"><img src="downloadiconmini.jpg" width="41" border="0" alt="Download the EFG Software" title="Download the EFG Software"></a></td>
+</tr>
+<tr>
+<td class="icontext">View</td>
+<td class="icontext">Config</td>
+<td class="icontext">Download</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class="frame">
+<tr>
+<td>
+<table class="main">
+<tr>
+<td class="title">Create/Edit Template</td>
+</tr>
+
+<tr>
+<td class="list">
+<table>
+<tr>
+<td class="menu">
+	<form action="RedirectResponse.jsp" method="post" name="myForm" onsubmit="return valid('templateUniqueName')">
+		<div class="menutext">Choose from the list, or enter a name to create a new template:</div>
+		  <input type="text" id="templateUniqueName" size="20" style="width:200" name="templateUniqueName"/>
+		  <input type="button" hidefocus="1" value="&#9660;"
+			style="height:23; width:22; font-family: helvetica;"
+			onclick="JavaScript:menuActivate('templateUniqueName', 'combodiv', 'guid')"/>
+			<div id="combodiv" style="position:absolute; display:none; top:0px;
+				left:0px;z-index:10000" onmouseover="javascript:oOverMenu='combodiv';"
+				onmouseout="javascript:oOverMenu=false;">
+			 <select name="templateUniqueName" size="10" id="guid" style="width: 220; border-style: none"
+				onclick="JavaScript:textSet('templateUniqueName',this.value);"
+				onkeypress="JavaScript:comboKey('templateUniqueName', this);">
+							
+							<option value="gmri aq weeds">gmri aq weeds</option>	
+		
+			 </select>
+			</div>
+					
+			<input type="hidden" name="gmri aq weeds" value="1168458244156"/>
+			<input type="hidden" name="1168458244156" value="commonNamePlate.jsp"/>
+			<input type="hidden" name="Ipo_1157815192578" value="Morning Glories of Monteverde"/>
+			<input type="hidden" name="PIShrubs_1164654301962" value="Shrubs of Plum Island - Peter Burn"/>
+			<input type="hidden" name="marshabogdatacvsOLD_1156949797382" value="Bogs and Acidic Fens of Southern New England"/>
+			<input type="hidden" name="GulfMESampleEFG2_1168624443776" value="Aquatic Weeds - GMRI (Sample)"/>
+			<input type="hidden" name="Palm_1157908309781" value="Palm Genera of Monteverde"/>
+			<input type="hidden" name="Fam1_1165531638359" value="Tree Families of Monteverde"/>
+			<input type="hidden" name="lifelisthouse_1173639486248" value="Jenn's Backyard: Framingham, MA (Draft version)"/>
+			<input type="hidden" name="hetaerinadatamay_1173716339943" value="Sample for EFG2 - Hetaerina"/>
+			<input type="hidden" name="PITreesFinalJennEdit07122006_1164816063212" value="Trees of Plum Island - Peter Burn"/>
+			<input type="hidden" name="dataSourceName" value="GulfMESampleEFG2_1168624443776"/>
+			<input type="hidden" name="Itho_1165447727621" value="Clearwing Butterflies of Costa Rica"/>
+			<input type="hidden" name="amerplantsineurope_1156949791323" value="American Plants in Europe - JFO"/>
+			<input type="hidden" name="SailorsHomePondSurvey2002_2006_1167802002581" value="Guide to the Flora and Fauna of Sailors Home Pond"/>
+			<input type="hidden" name="NantucketSppPgs2006_09_10_1158173547893" value="Invasive Plants of Nantucket"/>
+			<input type="hidden" name="configType" value="plates"/>
+			<input type="hidden" name="Mimic_1157856497067" value="Mimics of Clearwing Butterflies"/>
+			<input type="hidden" name="HetaerinaData_1158244527016" value="Rubyspot Damselflies (Hetaerina)"/>
+			<input type="hidden" name="MorolaEditAug25_1156949790968" value="Flora of the Boston Nature Center"/>
+</td>
+</tr>
+    	</form>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td class=""></td>
+<td class="horizspacer"></td>
+<td class=""></td>
+<td class="logos"><a href="http://efg.cs.umb.edu"><img src="efglogo.gif" width="52" height="56" border="0" alt="EFG Home Page" title="EFG Home Page"></a></td>
+<td class="logos"><a href="http://www.umb.edu"><img src="umblogo.gif" width="54" height="58" border="0" alt="UMass Boston Home Page" title="UMass Boston Home Page"></a></td>
+</tr>
+
+<tr>
+<td class="copyright" colspan="5">&copy; 2007 EFG Group and UMass Boston. This research is supported in part by the NSF.</td>
+</tr>
+
+<tr>
+<td class="timestamp" colspan="5">
+<script language="JavaScript" type="text/javascript">
+            <!--
+             document.write("Last Modified " + document.lastModified)
+            // -->
+        
+</script>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
