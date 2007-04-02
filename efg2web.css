@@ -374,3 +374,9 @@
 	padding-top: 20px;
 	text-align: center;
 	}
+	.subheader {
+	font-family: sans, arial, verdana;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	}
